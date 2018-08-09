@@ -4,9 +4,8 @@
 
 css单位：`px` 无需转换
 
-直接引入并在该`script`标签设置`width="设计图宽度"`（默认750可不设置）即可
-
 ```html
+<!-- width="设计图宽度"（默认750可不设置）-->
 <script width="750" src="viewport.js"></script>
 ```
 
