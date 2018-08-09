@@ -35,6 +35,8 @@ css单位：`rem`
 
 移动端适配方案：通过设置css `html{font-size: n vw}` 改变`rem`相对大小实现自动适配，使用@media向后兼容
 
+css单位：`rem`
+
 ```html
 <link rel="stylesheet" type="text/css" href="vw.css">
 ```
