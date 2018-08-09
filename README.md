@@ -11,3 +11,17 @@
 ```html
 <script width="750" src="viewport.js"></script>
 ```
+
+# zoom.js
+
+移动端适配方案：
+
+通过设置 `html.style.zoom` 实现自动适配
+
+写`css`时直接写测量出的`px`单位，无需转换
+
+然后引入该`zoom.js`，并在该`script`标签设置`width="设计图宽度"`（默认750可不设置）即可
+
+```html
+<script width="750" src="zoom.js"></script>
+```
