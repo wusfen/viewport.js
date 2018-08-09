@@ -28,6 +28,6 @@
 
 该版本在某些情况会不太理想，比如微信中长按图片时，位置偏差导致无法触发保存
 
-# rem方案与 vw方案
+# rem, vw
 
 https://github.com/wusfen/rem/blob/master/rem.js
