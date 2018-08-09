@@ -1,6 +1,6 @@
 # viewport.js
 
-移动端适配方案：通过设置`viewport`的`width`等于`设计图宽度`，再自动计算设置`viewport`的`scale`实现自动适配
+移动端适配方案：通过设置`viewport`的`width`等于`设计图宽度`，再自动计算`viewport`的`scale`实现自动适配
 
 css单位：`px` 无需转换
 
@@ -11,7 +11,7 @@ css单位：`px` 无需转换
 
 # zoom.js
 
-移动端适配方案：通过设置 `html.style.zoom` 实现自动适配
+移动端适配方案：通过计算设置 `html.style.zoom` 实现自动适配
 
 css单位：`px`
 
@@ -23,7 +23,7 @@ css单位：`px`
 
 # rem.js
 
-移动端适配方案：通过设置 `html.style.fontSize` 改变`rem`相对大小实现自动适配
+移动端适配方案：通过计算设置 `html.style.fontSize` 改变`rem`相对大小实现自动适配
 
 css单位：`rem`
 
