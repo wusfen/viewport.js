@@ -28,5 +28,13 @@ css单位：`px`
 css单位：`rem`
 
 ```html
-<script width="750" rem="100" src="rem.js">
+<script width="750" rem="100" src="rem.js"></script>
+```
+
+# vw.css
+
+移动端适配方案：通过设置css `html{font-size: n vw}` 改变`rem`相对大小实现自动适配，使用@media向后兼容
+
+```html
+<link rel="stylesheet" type="text/css" href="vw.css">
 ```
