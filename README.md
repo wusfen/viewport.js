@@ -2,7 +2,7 @@
 
 移动端适配方案：
 
-通过设置`viewport`的`width`等于设计图片宽度，再自动计算设置`viewport`的`scale`实现自动适配
+通过设置`viewport`的`width`等于`设计图宽度`，再自动计算设置`viewport`的`scale`实现自动适配
 
 写`css`时直接写测量出的`px`单位，无需转换
 
