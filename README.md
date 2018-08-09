@@ -30,4 +30,4 @@
 
 # rem, vw
 
-https://github.com/wusfen/rem/blob/master/rem.js
+https://github.com/wusfen/rem
