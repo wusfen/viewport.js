@@ -1,5 +1,5 @@
 // <script width="750" src="viewport.js">
-addEventListener('resize', function f() {
+addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', function f() {
   var designWidth = 750
   var scripts = document.scripts
   for (var i = 0; i < scripts.length; i++) {
@@ -19,5 +19,7 @@ addEventListener('resize', function f() {
   viewport.content = 'width=@designWidth,initial-scale=@scale,maximum-scale=@scale,user-scalable=0'
     .replace(/@designWidth/g, designWidth)
     .replace(/@scale/g, scale)
-  return f
+  return function () {
+    setTimeout(function () { f() }, 300)
+  }
 }())
