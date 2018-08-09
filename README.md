@@ -14,7 +14,7 @@ css单位：`px` 无需转换
 
 移动端适配方案：通过设置 `html.style.zoom` 实现自动适配
 
-css单位：`px` 无需转换
+css单位：`px`
 
 ```html
 <script width="750" src="zoom.js"></script>
