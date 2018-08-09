@@ -14,6 +14,6 @@ addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize
   if (deviceWidth > designWidth) deviceWidth = designWidth
   html.style.fontSize = deviceWidth * rem / designWidth + 'px'
   return function () {
-    setTimeout(function () { f() }, 300)
+    setTimeout(f, 300)
   }
 }())

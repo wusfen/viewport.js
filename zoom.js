@@ -11,6 +11,6 @@ addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize
   var scale = deviceWidth / designWidth
   html.style.zoom = scale
   return function () {
-    setTimeout(function () { f() }, 300)
+    setTimeout(f, 300)
   }
 }())

@@ -20,6 +20,6 @@ addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize
     .replace(/@designWidth/g, designWidth)
     .replace(/@scale/g, scale)
   return function () {
-    setTimeout(function () { f() }, 300)
+    setTimeout(f, 300)
   }
 }())
