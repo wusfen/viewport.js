@@ -5,8 +5,8 @@
 css单位：`px` 无需转换
 
 ```html
-<!-- width="设计图宽度"（默认750可不设置）-->
-<script width="750" src="viewport.js"></script>
+<!-- width="设计图宽度"（默认750可不设置） max="最大显示宽度"（默认等于设计图宽度） -->
+<script width="750" max="750" src="viewport.js"></script>
 ```
 
 # zoom.js
@@ -16,7 +16,7 @@ css单位：`px` 无需转换
 css单位：`px`
 
 ```html
-<script width="750" src="zoom.js"></script>
+<script width="750" max="750" src="zoom.js"></script>
 ```
 
 该版本在某些情况会不太理想，比如微信中长按图片时，位置偏差导致无法触发保存
@@ -28,7 +28,7 @@ css单位：`px`
 css单位：`rem`
 
 ```html
-<script width="750" rem="100" src="rem.js"></script>
+<script width="750" max="750" rem="100" src="rem.js"></script>
 ```
 
 # vw.css

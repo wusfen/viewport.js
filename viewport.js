@@ -1,11 +1,14 @@
-// <script width="750" src="viewport.js">
+// <script width="750" max="750" src="viewport.js">
 addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', function f() {
-  var designWidth = 750
+  var designWidth = 750, maxWidth
   var scripts = document.scripts
   for (var i = 0; i < scripts.length; i++) {
     var width = scripts[i].getAttribute('width')
+    var max = scripts[i].getAttribute('max')
     if (width) designWidth = width
+    if (max) maxWidth = max
   }
+  if (!maxWidth) maxWidth = designWidth
   var viewport = document.getElementsByName('viewport')[0]
   if (!viewport) {
     viewport = document.createElement('meta')
@@ -15,6 +18,7 @@ addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize
   }
   viewport.content = 'width=device-width'
   var deviceWidth = document.documentElement.clientWidth
+  if (deviceWidth > maxWidth) deviceWidth = maxWidth
   var scale = deviceWidth / designWidth
   viewport.content = 'width=@designWidth,initial-scale=@scale,maximum-scale=@scale,user-scalable=0'
     .replace(/@designWidth/g, designWidth)
