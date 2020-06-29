@@ -1,10 +1,12 @@
-html{font-size:50px}
-@media (min-width:320px) {html{font-size:50px}}
-@media (min-width:360px) {html{font-size:56.25px}}
-@media (min-width:375px) {html{font-size:58.59375px}}
-@media (min-width:414px) {html{font-size:64.6875px}}
-@media (min-width:432px) {html{font-size:67.5px}}
-@media (min-width:480px) {html{font-size:75px}}
-@media (min-width:540px) {html{font-size:84.375px}}
-@media (max-width:640px) {html{font-size:15.625vw}}
-body{font-size:.2em}
+
+html{font-size:50PX}
+@media (min-width:320PX) {html{font-size:50PX}}
+@media (min-width:360PX) {html{font-size:56.25PX}}
+@media (min-width:375PX) {html{font-size:58.59375PX}}
+@media (min-width:414PX) {html{font-size:64.6875PX}}
+@media (min-width:432PX) {html{font-size:67.5PX}}
+@media (min-width:480PX) {html{font-size:75PX}}
+@media (min-width:540PX) {html{font-size:84.375PX}}
+@media (max-width:640PX) {html{font-size:15.625vw}}
+@media (max-width:640PX) {html{font-size:calc(100vw / (64/100))}}
+body{font-size:16PX}
