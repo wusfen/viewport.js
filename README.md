@@ -9,6 +9,8 @@ css单位：`px` 无需转换
 <script width="750" max="750" src="viewport.js"></script>
 ```
 
+该版本不能和第三方以px为单位css框架共存，因为缩小之后，第三方框架的样式也被缩小了
+
 # zoom.js
 
 移动端适配方案：通过计算设置 `html.style.zoom` 实现自动适配
