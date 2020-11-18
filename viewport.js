@@ -16,8 +16,12 @@ addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize
     var head = document.getElementsByTagName('head')[0]
     head.appendChild(viewport)
   }
+
+  // get deviceWidth
   viewport.content = 'width=device-width'
   var deviceWidth = document.documentElement.clientWidth
+
+  // scale
   if (deviceWidth > maxWidth) deviceWidth = maxWidth
   var scale = deviceWidth / designWidth
   viewport.content = 'width=@designWidth,initial-scale=@scale,maximum-scale=@scale,user-scalable=0'
